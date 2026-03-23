@@ -1,26 +1,18 @@
-package com.nolanhypez.cad.manager;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.nolanhypez.cad.model.CADLocation;
 
 public class LocationManager {
-    private Map<String, Location> locations;
 
-    public LocationManager() {
-        locations = new HashMap<>();
+    // Your existing code, updated to use CADLocation instead of Location
+    private CADLocation currentLocation;
+    
+    // Example methods that use CADLocation
+    public void setCurrentLocation(CADLocation location) {
+        this.currentLocation = location;
     }
 
-    public void addLocation(String name, Location location) {
-        locations.put(name, location);
+    public CADLocation getCurrentLocation() {
+        return currentLocation;
     }
 
-    public Location getLocation(String name) {
-        return locations.get(name);
-    }
-
-    public void removeLocation(String name) {
-        locations.remove(name);
-    }
-
-    // other relevant methods
+    // More code...
 }
