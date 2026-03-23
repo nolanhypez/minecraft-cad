@@ -1,0 +1,37 @@
+# CAD Configuration
+
+## Dispatch Settings
+# Configure dispatch settings for your CAD system.
+dispatch:
+  enable: true
+  default_priority: high
+  timeout: 300
+
+## Unit Types
+# Define types of units in the system.
+unit_types:
+  - name: "Police"
+    code: "POL"
+    color: "#0000FF"
+  - name: "Fire"
+    code: "FIR"
+    color: "#FF0000"
+  - name: "EMS"
+    code: "EMS"
+    color: "#00FF00"
+
+## Notifications
+# Set up notifications throughout the system.
+notifications:
+  enable: true
+  methods:
+    - type: "email"
+      recipient: "example@example.com"
+    - type: "sms"
+      number: "+1234567890"
+
+## Messages
+# Customize messages for dispatch and unit interactions.
+messages:
+  unit_assigned: "Unit {{unit}} has been dispatched."
+  unit_arrived: "Unit {{unit}} has arrived at the scene."
