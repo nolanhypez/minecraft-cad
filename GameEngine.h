@@ -1,0 +1,1 @@
+#ifndef GAMEENGINE_H\n#define GAMEENGINE_H\n\nclass GameEngine {\npublic:\n    void run();\n};\n\n#endif // GAMEENGINE_H
