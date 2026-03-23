@@ -1,0 +1,11 @@
+name: MinecraftCAD
+version: 1.0.0
+author: nolanhypez
+description: A plugin for Minecraft CAD.
+main: com.example.MinecraftCAD
+api-version: 1.0
+commands:
+  start:
+    description: Start MinecraftCAD
+  stop:
+    description: Stop MinecraftCAD
